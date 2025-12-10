@@ -1,0 +1,55 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  user-select: none;
+}
+.embla__slide {
+    flex-shrink: 0;
+    width: 30%;
+  margin-bottom: 20px;
+  height: 100px;
+  
+}
+
+.bg_section3{
+    background-image: url(assets/image/img_header/texto_transparent.png);
+    
+}
+.bg_section3 img{
+    display: none;
+    width: 60%;
+}
+
+
+
+@media (width > 640px) {
+    .embla__slide{
+        flex-grow: 0;
+        width: 20%;
+        height: 250px;
+    }
+
+    .bg_section3{
+        background-image: none;
+    }
+
+    .bg_section3 img{
+    display: block;
+
+    
+}
+
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

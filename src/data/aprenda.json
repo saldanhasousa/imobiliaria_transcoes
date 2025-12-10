@@ -1,0 +1,24 @@
+{
+    "elementos": [
+        {
+            "image": "/image_equipe/dos_santos.jpeg",
+            "texto": "Analista de Dados"
+        },
+        {
+            "image": "/image_equipe/laurindo.jpg",
+            "texto": "Design"
+        },
+        {
+            "image": "/image_equipe/madalena.jpeg",
+            "texto": "Gestora"
+        },
+        {
+            "image": "/image_equipe/noemia.jpeg",
+            "texto": "Backend"
+        },
+        {
+            "image": "/image_equipe/saldanha.jpg",
+            "texto": "Frontend"
+        }
+    ]
+}

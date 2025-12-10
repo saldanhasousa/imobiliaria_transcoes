@@ -1,0 +1,110 @@
+{
+    
+    "arrendar": 
+    [
+        {
+        "id": 1,
+        "titulo": "Casa t3",
+        "preco": "60.000kz/mês",
+        "local": "Rangel",
+        "image": "/image/slid_2.png",
+        "estado": "Disponível"
+        },
+        {
+        "id": 2,
+        "titulo": "Casa t3",
+        "preco": "45.000kz/mês",
+        "local": "Rangel",
+        "image": "/image/slid_1.png",
+        "estado": "Disponível"
+        },
+        {
+        "id": 3,
+        "titulo": "T5",
+        "preco": "1.000.000kz/mês",
+        "local": "Cacuaco",
+        "image": "/image/slid_3.png",
+        "estado": "Disponível"
+        },
+        {
+        "id": 4,
+        "titulo": "t3",
+        "preco": "35.000kz/mês",
+        "local": "Viana",
+        "image": "/image/slid_4.png",
+        "estado": "Disponível"
+        }
+    ],
+
+    "venda": 
+    [
+        {
+        "id": 1,
+        "titulo": "Casa t3",
+        "preco": "5.000.000kz",
+        "local": "Gamek",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkD8nWkBi1hbOyIP_q5W-meKxa_IFT-n8f9Q&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 2,
+        "titulo": "Casa t2",
+        "preco": "3.000.000kz",
+        "local": "Rangel",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEvJlfumdnQg7K7etuh-UiZYdkKqChX_LTqg&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 3,
+        "titulo": "V3",
+        "preco": "18.000.000kz",
+        "local": "Camama",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HybSHMtFSZ_4gW8oEW9YUR94WdV4s8yr0g&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 4,
+        "titulo": "T5",
+        "preco": "300.000.000kz",
+        "local": "Viana",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXTVlIiuJIrFV_aHydB4vXNC-L-7BXN-iqg&s",
+        "estado": "Disponível"
+        }
+    ],
+
+    "alugel": 
+    [
+        {
+        "id": 1,
+        "titulo": "Um quarto suite",
+        "preco": "5.000kz/dia",
+        "local": "Kikolo",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDKEdn1-0Y_8ZwolGWNYw2_ONnVDv4cz8Dw&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 2,
+        "titulo": "T2",
+        "preco": "30.000kz/dia",
+        "local": "São Paulo",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgtdu0hqcHFvYagAD__A8pS2QgmYqaoQa5HQ&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 3,
+        "titulo": "V2",
+        "preco": "180.000kz/dia",
+        "local": "Vila Alice",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbiIXeTOk-JdnjBBMgvy657KolDxXGZfyTFA&s",
+        "estado": "Disponível"
+        },
+        {
+        "id": 4,
+        "titulo": "T3",
+        "preco": "50.000kz",
+        "local": "Kilamba",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-Zw6v9cqoXWGRFmP5tTby76EMpzDEfc00w&s",
+        "estado": "Disponível"
+        }
+    ]
+}
