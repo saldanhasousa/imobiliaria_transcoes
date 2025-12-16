@@ -11,6 +11,8 @@ import Aprenda from './components/Aprenda.jsx';
 import Sobre from './components/Sobre.jsx';
 import Contactos from './components/Contactos.jsx';
 import ListaUsuario from './components/ListaUsuario.jsx';
+import Administrador from './modules/administrador/Administrador.jsx';
+import DetalheImovel from '../page/DetalheImovel.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
     children:[
       {path: "/", element: <Home />},
       {path: "/imoveis", element: <Imoveis/>},
+      {path: "/detalheImove/:id", element: <DetalheImovel/>},
       {path: "/aprenda", element: <Aprenda/>},
       {path: "/sobre", element: <Sobre/>},
       {path: "/contactos", element: <Contactos/>},
@@ -26,7 +29,14 @@ const router = createBrowserRouter([
   },
   
   {path: "/cadastro", element: <Cadastro/>},
-  {path: "/listUsuario", element: <ListaUsuario/>},
+  {path: "/detalheImovel", element: <DetalheImovel/>},
+  
+  {path: "/administrador", element: <Administrador/>, 
+    children:[
+      {path: "listUsuario", element: <ListaUsuario/>}
+    ]
+  },
+  
 ])
 
 createRoot(document.getElementById('root')).render(

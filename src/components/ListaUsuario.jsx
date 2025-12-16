@@ -23,18 +23,18 @@ export default function ListaUsuario() {
 
   return (
     <div>
-      <h2>Lista de Usuários</h2>
-              <table className="m-auto w-[1000px] max-sm:w-full border-separate  border-spacing-y-2.5  ">
+      <h2 className="font-bold text-[1.5em]">Lista de Usuários</h2>
+              <table className=" border-separate  w-[740px] border-spacing-y-2.5  ">
                 
                   
                   {usuarios.map(usuario => (
-                    <tr className=" even:bg-gray-300 hover:even:bg-gray-400/70 hover:odd:bg-blue-500/60 odd:bg-blue-300 *:p-2  *:text-nowrap " key={usuario.id}>
+                    <tr className=" bg-gray-300    *:p-2  *:text-nowrap " key={usuario.id}>
                         <td className="">{usuario.id}</td>
                         <td className="">{usuario.nome}</td>
                         <td>{usuario.email}</td>
                         <td>{usuario.telefone}</td>
                         <td>{usuario.senha}</td>
-                        <td className="bg-red-600  font-bold text-white text-center">
+                        <td className="  font-bold hover:text-red-600 text-center text-red-700 hover:cursor-pointer">
                             Apagar
                         </td>
                     </tr>

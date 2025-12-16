@@ -1,6 +1,6 @@
 import React from 'react'
-
-const CardsImoveis = ({titulo, preco, local, image, estado}) => {
+import {Link} from 'react-router-dom'
+const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
   return (
     
 
@@ -43,7 +43,7 @@ const CardsImoveis = ({titulo, preco, local, image, estado}) => {
                 
 
             <div className='text-center'>
-                <button className='bg-yellow-300/40 hover:bg-amber-400/40 p-1 w-32 rounded-md font-bold text-gray-600 '>Detalhes</button>
+                <button className='bg-yellow-300/40 hover:bg-amber-400/40 p-1 w-32 rounded-md font-bold text-gray-600 '><Link className='cursor-pointer' to={`/detalheImove/${id}`}>Detalhes</Link></button>
             </div>
         </div>
     

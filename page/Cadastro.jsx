@@ -82,10 +82,6 @@ const Cadastro = () => {
                         />
                     </div>
 
-                    {/* <div>
-                        <input type="password" placeholder='Confirme' />
-                    </div> */}
-
                     <input type="submit"  className='mb-5 font-bold p-1  rounded-[5px] bg-gray-400/70 hover:bg-white/40 w-[50%] shadow-[0_0_10px] shadow-gray-600/70 cursor-pointer'/>
                 </form>
 

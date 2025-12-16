@@ -1,22 +1,27 @@
 {
     "elementos": [
         {
+            "nome":"António Dos Santos",
             "image": "/image_equipe/dos_santos.jpeg",
             "texto": "Analista de Dados"
         },
         {
+            "nome":"Laurindo Vieira",
             "image": "/image_equipe/laurindo.jpg",
             "texto": "Design"
         },
         {
+            "nome":"Madalena José",
             "image": "/image_equipe/madalena.jpeg",
             "texto": "Gestora"
         },
         {
+            "nome":"Noémia Soque",
             "image": "/image_equipe/noemia.jpeg",
             "texto": "Backend"
         },
         {
+            "nome":"Saldanha Sousa",
             "image": "/image_equipe/saldanha.jpg",
             "texto": "Frontend"
         }

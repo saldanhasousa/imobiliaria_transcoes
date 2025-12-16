@@ -8,6 +8,7 @@ function Imoveis(){
                 {car.arrendar.map((info) => (
                     <CardsImoveis 
                         key={info.id}
+                        id={info.id}
                         titulo={info.titulo}
                         estado={info.estado}
                         preco={info.preco}
@@ -20,6 +21,7 @@ function Imoveis(){
                 {car.alugel.map((info) => (
                     <CardsImoveis 
                         key={info.id}
+                        id={info.id}
                         titulo={info.titulo}
                         estado={info.estado}
                         preco={info.preco}
@@ -32,6 +34,7 @@ function Imoveis(){
                 {car.venda.map((info) => (
                     <CardsImoveis 
                         key={info.id}
+                        id={info.id}
                         titulo={info.titulo}
                         estado={info.estado}
                         preco={info.preco}
