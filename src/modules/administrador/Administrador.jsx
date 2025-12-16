@@ -7,7 +7,7 @@ const Administrador = () => {
     <div className='p-2.5 w-full h-full '>
         <h1 className='py-2.5 font-bold text-[2em]'>Administrador</h1>
 
-        <div className=' [&_button]:rounded-sm [&_button]:p-2 [&_button]:mx-2.5  text-white [&_button]:font-bold'>
+        <div className=' [&_button]:rounded-sm [&_button]:p-2 flex *:text-nowrap [&_button]:mx-2.5  text-white [&_button]:font-bold max-sm:flex-wrap gap-2.5'>
 
             <Link to="listUsuario"><button className='bg-gray-600'>Lista Usuário</button></Link>
             <button className='bg-gray-600'>Lista Imoveis</button>

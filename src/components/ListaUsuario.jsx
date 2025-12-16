@@ -29,6 +29,7 @@ export default function ListaUsuario() {
                   
                   {usuarios.map(usuario => (
                     <tr className=" bg-gray-300    *:p-2  *:text-nowrap " key={usuario.id}>
+                        
                         <td className="">{usuario.id}</td>
                         <td className="">{usuario.nome}</td>
                         <td>{usuario.email}</td>

@@ -13,6 +13,7 @@ import Contactos from './components/Contactos.jsx';
 import ListaUsuario from './components/ListaUsuario.jsx';
 import Administrador from './modules/administrador/Administrador.jsx';
 import DetalheImovel from '../page/DetalheImovel.jsx';
+import ImovelCadastro from '../page/ImovelCadastro.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
   
   {path: "/cadastro", element: <Cadastro/>},
   {path: "/detalheImovel", element: <DetalheImovel/>},
+  {path: "/imovelCadastro", element: <ImovelCadastro/>},
   
   {path: "/administrador", element: <Administrador/>, 
     children:[
