@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import './index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import App from './App.jsx'
 import Imoveis from './components/Imoveis.jsx';
 import Cadastro from '../page/Cadastro.jsx';
@@ -14,7 +16,10 @@ import ListaUsuario from './components/ListaUsuario.jsx';
 import Administrador from './modules/administrador/Administrador.jsx';
 import DetalheImovel from '../page/DetalheImovel.jsx';
 import ImovelCadastro from '../page/ImovelCadastro.jsx';
+import ListaImoveis from './components/ListaImovel.jsx';
 
+
+AOS.init();
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>,
@@ -35,7 +40,8 @@ const router = createBrowserRouter([
   
   {path: "/administrador", element: <Administrador/>, 
     children:[
-      {path: "listUsuario", element: <ListaUsuario/>}
+      {path: "listUsuario", element: <ListaUsuario/>},
+      {path: "listImoveis", element: <ListaImoveis/>}
     ]
   },
   

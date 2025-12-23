@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import './App.css'
@@ -16,7 +18,7 @@ import Imoveis from './components/Imoveis.jsx'
 import DetalheImovel from '../page/DetalheImovel.jsx'
 
 function App() {
-
+    AOS.init();
   return (
    <div id='main' className='grid grid-cols-1 grid-rows-[50px_1fr_200px] min-h-screen relative @7xl:w-7xl @7xl:my-auto '>
      

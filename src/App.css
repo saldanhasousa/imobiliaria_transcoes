@@ -1,3 +1,5 @@
+
+
 .embla {
   overflow: hidden;
 }
@@ -9,9 +11,9 @@
 }
 .embla__slide {
     flex-shrink: 0;
-    width: 30%;
+    
   margin-bottom: 20px;
-  height: 100px;
+  
   
 }
 
@@ -24,14 +26,67 @@
     width: 60%;
 }
 
+.element_svg{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+.item_svg{
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: #1f2937;
+  
+}
+
+@property --angular{
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.item_svg::after, .item_svg::before{
+  padding: 20px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+   top: 50%;
+    left: 50%;
+    z-index: -1;
+ background-image: conic-gradient( from var(--angular),transparent 50%, red);
+   animation: borderAngula 5s linear infinite;
+}
+
+.item_svg::after{
+    filter: blur(5px);
+    
+}
+
+
+@keyframes borderAngula {
+  from {
+    --angular: 0deg;
+  }
+  to {
+    --angular: 360deg;
+  }
+}
+
 
 
 @media (width > 640px) {
-    .embla__slide{
-        flex-grow: 0;
-        width: 20%;
-        height: 250px;
-    }
+   
 
     .bg_section3{
         background-image: none;
