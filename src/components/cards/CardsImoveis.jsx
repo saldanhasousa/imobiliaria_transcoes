@@ -1,21 +1,21 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { MdOutlineBedroomChild } from "react-icons/md";
+import { FaBath } from "react-icons/fa";
 const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
   return (
     
 
-        <div className='bg-gray-400/5 rounded-xl w-52 h-80 shadow-[0_0_10px] shadow-black/30'>
+        <div className='bg-gray-400/5 rounded-t-xl rounded-b-lg w-52 h-82 shadow hover:shadow-lg transition hover:scale-105 duration-300 '>
 
-            <div id="contain_img" className='[&_button]:border [&_button]:border-gray-200 [&_button]:text-white  [&_button]:w-8  [&_button]:absolute [&_button]:bottom-1 [&_button]:font-bold [&_button]:z-10 [&_button]:bg-white/50   [&_button]:rounded-[50%] w-full h-[58%] relative [&_img]:rounded-tl-xl [&_img]:rounded-tr-xl [&_img]:w-full [&_img]:h-full'>
+            <div id="contain_img" className='[&_button]:border [&_button]:border-gray-200 [&_button]:text-white  [&_button]:w-8  [&_button]:absolute [&_button]:bottom-1 [&_button]:font-bold [&_button]:z-10 [&_button]:bg-white/50   [&_button]:rounded-[50%] w-full h-[55%] relative [&_img]:rounded-t-xl [&_img]:w-full [&_img]:h-full'>
 
                 <div id='estado' className=' font-bold rounded-4xl text-gray-500 bg-amber-100 right-1.5 p-1 top-2 z-10 absolute '>
                     {estado}
                 </div>
 
-                <img src={image} className='' alt="" />
-                {/* <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" /> */}
+                <img src={image} className='' alt="" object-cover/>
+         
 
                 <button className='right-10'>
                     &lt;
@@ -26,25 +26,38 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
                 </button>
             </div>
 
-            <div className='font-light h-[30%] *:truncate p-1'>
-                <p className='italic text-black/50'>
-                    <abbr title={titulo} className='no-underline'>{titulo}</abbr>
-                </p>
+          <div className='font-light *:truncate p-1'>
+              <h3 className='font-semibold'>
+                  {titulo}
+              </h3>
 
-                <p className=''> 
-                    <abbr title={local} className='no-underline'>{local}</abbr> 
-                </p>
+              <p className=''>
+                  {local}
+              </p>
 
-                <p className='font-bold text-gray-500 text-[1.5em]'>
-                    <abbr title={preco} className='no-underline'>{preco}</abbr>
-                    </p>
-            </div>
+              <p className=' text-sm text-gray-500'>
+                  {preco}
+              </p>
 
-                
+             
 
-            <div className='text-center'>
-                <button className='bg-yellow-300/40 hover:bg-amber-400/40 p-1 w-32 rounded-md font-bold text-gray-600 '><Link className='cursor-pointer' to={`/detalheImove/${id}`}>Detalhes</Link></button>
-            </div>
+          </div>
+
+         
+          <div id="part" className='flex  justify-evenly border-t p-1 gap-2.5'>
+              
+              <p className='flex'>
+                  <MdOutlineBedroomChild className='w-6 h-6 text-gray-400' /> (2)
+              </p>
+
+              <p className='flex'>
+
+                  <FaBath className='text-gray-400 w-6 h-6' />(4)
+              </p>
+
+          </div>
+          <button className=' w-full bg-yellow-400 rounded-lg py-1 '><Link className='cursor-pointer' to={`/detalheImove/${id}`}>Detalhes</Link></button>
+
         </div>
     
   )

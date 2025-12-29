@@ -6,19 +6,19 @@
 .embla__container {
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 20px;
   user-select: none;
 }
 .embla__slide {
     flex-shrink: 0;
-    
+   
   margin-bottom: 20px;
   
   
 }
 
 .bg_section3{
-    background-image: url(assets/image/img_header/texto_transparent.png);
+    background-image: url(https://plantasdecasas.com/wp-content/uploads/2014/10/Plantas-de-Casas-Luanda-Angola.jpg);
     
 }
 .bg_section3 img{
@@ -36,7 +36,8 @@
 
 
 .item_svg{
-  color: white;
+  color: darkgray;
+  font-weight: bold;
   position: relative;
   text-align: center;
   display: flex;
@@ -44,11 +45,13 @@
   align-items: center;
   justify-content: center;
   padding-top: 10px;
-  background-color: #1f2937;
+  background-color: #1e2939;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.479);
+
   
 }
 
-@property --angular{
+/* @property --angular{
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
@@ -81,7 +84,7 @@
   to {
     --angular: 360deg;
   }
-}
+}*/
 
 
 

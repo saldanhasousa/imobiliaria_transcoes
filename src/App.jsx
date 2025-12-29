@@ -17,10 +17,11 @@ import EmblaCarousel from './components/EmblaCarousel.jsx'
 import Imoveis from './components/Imoveis.jsx'
 import DetalheImovel from '../page/DetalheImovel.jsx'
 
+
 function App() {
     AOS.init();
   return (
-   <div id='main' className='grid grid-cols-1 grid-rows-[50px_1fr_200px] min-h-screen relative @7xl:w-7xl @7xl:my-auto '>
+   <div id='main' className='grid grid-cols-1 grid-rows-[50px_1fr_auto] min-h-screen relative @7xl:w-7xl @7xl:my-auto '>
      
         <Header/>
 
