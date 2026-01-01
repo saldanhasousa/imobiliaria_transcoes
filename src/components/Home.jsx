@@ -6,7 +6,7 @@ import cont from '../data/imoveis.json'
 import CardsImoveis from './cards/CardsImoveis.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import SearchBar from '../components/search/SearchBar.jsx';
 import  { Home as HomeIcon,  Building2, Castle  } from "lucide-react";
 
 
@@ -15,21 +15,22 @@ const Home = () => {
   return (
     
         <main className=' mb-5 row-start-2 row-end-3 '>
-          <section className="gap-5 h-125 bg-cover bg-center w-full text-center flex flex-col flex-nowrap justify-center" style={{ backgroundImage: `url(${bgimg_section})`}}>
+          <section className="relative gap-5 h-125 bg-cover bg-center w-full text-center flex flex-col flex-nowrap justify-center" style={{ backgroundImage: `url(${bgimg_section})`}}>
 
         <div className="relative max-w-4xl mx-auto text-center text-white px-4">
           <h1 className="text-[clamp(2rem,4vw,3rem)] font-bold mb-4">
             Vamos encontrar o teu kubico dos sonhos
           </h1>
-          <p className="mb-6 text-lg">
+          {/* <p className="mb-6 text-lg">
             A tua casa em um click
           </p>
 
           <button className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold">
             Procurar imóveis
-          </button>
+          </button> */}
         </div>
 
+        <SearchBar variant="hero" />
           </section>
 
           <section className=" p-2.5 flex flex-col gap-5 ">
@@ -42,21 +43,24 @@ const Home = () => {
           
           <h2 className="text-center font-bold text-2xl pb-5 text-gray-800">CASAS COM PADÕES DIFERENCIADOS</h2>
           
-                  <div id="cont_svg " className='w-full items-center  flex  flex-col *:h-50 gap-2.5 *:w-50 sm:flex-row sm:justify-evenly '>
+                  <div id="cont_svg " className='w-full items-center  flex gap-5  flex-col *:h-64 *:hover:shadow-[0_0_10px_gray] *:w-50 sm:flex-row sm:justify-evenly '>
 
                     <div className="item_svg ">
                       <HomeIcon className="element_svg text-gray-400" />
                       <p>BAIXO</p>
+                      <p>Opções acessíveis</p>
                     </div>
 
                     <div className="item_svg">
                       <Building2 className="element_svg text-blue-500" />
                       <p>MÉDIO</p>
+                      <p>Conforto equilibrado</p>
                     </div>
 
                     <div className="item_svg">
-                      <Castle className="element_svg  text-yellow-500" />
+                      <Castle className="element_svg  text-yellow-500 " />
                       <p>ALTO</p>
+                      <p>Luxo e exclusividade</p>
                     </div>
 
                   </div>

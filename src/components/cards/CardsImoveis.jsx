@@ -6,9 +6,9 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
   return (
     
 
-        <div className='bg-gray-400/5 rounded-t-xl rounded-b-lg w-52 h-82 shadow hover:shadow-lg transition hover:scale-105 duration-300 '>
+        <div className='bg-gray-400/5 rounded-t-xl rounded-b-lg  h-85 shadow hover:shadow-lg transition hover:scale-105 duration-300 '>
 
-            <div id="contain_img" className='[&_button]:border [&_button]:border-gray-200 [&_button]:text-white  [&_button]:w-8  [&_button]:absolute [&_button]:bottom-1 [&_button]:font-bold [&_button]:z-10 [&_button]:bg-white/50   [&_button]:rounded-[50%] w-full h-[55%] relative [&_img]:rounded-t-xl [&_img]:w-full [&_img]:h-full'>
+            <div id="contain_img" className=' w-full h-[55%] relative [&_img]:rounded-t-xl [&_img]:w-full [&_img]:h-full'>
 
                 <div id='estado' className=' font-bold rounded-4xl text-gray-500 bg-amber-100 right-1.5 p-1 top-2 z-10 absolute '>
                     {estado}
@@ -17,13 +17,6 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
                 <img src={image} className='' alt="" object-cover/>
          
 
-                <button className='right-10'>
-                    &lt;
-                </button>
-
-                <button className='right-1.5'>
-                    &gt;
-                </button>
             </div>
 
           <div className='font-light *:truncate p-1'>
@@ -39,12 +32,10 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
                   {preco}
               </p>
 
-             
-
           </div>
 
          
-          <div id="part" className='flex  justify-evenly border-t p-1 gap-2.5'>
+          <div id="part" className='flex  justify-evenly border-t p-1 border-gray-400 gap-2.5'>
               
               <p className='flex'>
                   <MdOutlineBedroomChild className='w-6 h-6 text-gray-400' /> (2)
@@ -56,7 +47,7 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
               </p>
 
           </div>
-          <button className=' w-full bg-yellow-400 rounded-lg py-1 '><Link className='cursor-pointer' to={`/detalheImove/${id}`}>Detalhes</Link></button>
+          <button className=' w-full bg-gray-700 rounded-lg py-1 text-gray-200 text-center'><Link className='cursor-pointer ' to={`/detalheImove/${id}`}>Detalhes</Link></button>
 
         </div>
     

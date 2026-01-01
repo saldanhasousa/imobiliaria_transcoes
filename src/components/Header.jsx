@@ -9,11 +9,25 @@ import { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
 import Imoveis from './Imoveis';
 import { FaSearch } from "react-icons/fa";
+import {useEffect} from 'react';
 
 
 
 function Header() {
     const [menuAberto, setMenuAberto] = useState(false);
+
+    useEffect(() => {
+            function handleResize() {
+                if (window.innerWidth >= 768) {
+                    setMenuAberto(false);
+                }
+            }
+    
+            window.addEventListener("resize", handleResize);
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+    
+    
     return (
         <>
         <header className="text-white flex items-center fixed bg-gray-900 top-0 w-full row-end-2 row-start-1 justify-between text-[1.2em] z-50 max-sm:justify-end gap-3.5 py-2.5 px-3.5">
@@ -23,7 +37,7 @@ function Header() {
             </div>
 
             <menu className=''>
-                <ul className="flex flex-nowrap *:p-1 justify-center  gap-2.5 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-gray-800 *:hover:duration-600 *:hover:transition-colors">
+                <ul className="flex flex-nowrap *:p-1 justify-center  gap-2.5 max-sm:hidden font-bold *:rounded-[10px] *:hover:bg-gray-600 transition-colors">
                     <li>
                         <NavLink to="">
 
@@ -57,17 +71,19 @@ function Header() {
             </menu>
 
             <div className=' flex gap-3.5 justify-between items-center'>
-                <div id="img_pesquisa" className=' pl-6'>
+                {/* <div id="img_pesquisa" className=' pl-6'>
                     <FaSearch />
-                </div>
+                </div> */}
 
                 <div className="flex gap-2">
-                    <button className="px-4 py-1 border rounded-lg hover:bg-gray-800">
+                    <button className="px-4 py-1 border rounded-lg hover:bg-gray-600">
                         Publicar
                     </button>
-                    <button className="px-4 py-1 bg-yellow-400 hover:bg-yellow-300 rounded-lg font-semibold">
-                        Login
-                    </button>
+                    <Link to="/cadastro">
+                        <button className="px-4 py-1 bg-yellow-400 hover:bg-yellow-300 rounded-lg font-semibold text-gray-500">
+                            Login
+                        </button>
+                    </Link>
                 </div>
             </div>
         </header>

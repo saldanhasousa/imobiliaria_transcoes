@@ -1,4 +1,28 @@
 
+.input {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #ccc;
+}
+/*PARA O FILTER*/
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
 
 .embla {
   overflow: hidden;
@@ -6,7 +30,7 @@
 .embla__container {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 10px;
   user-select: none;
 }
 .embla__slide {
@@ -36,7 +60,7 @@
 
 
 .item_svg{
-  color: darkgray;
+  color: #fff;
   font-weight: bold;
   position: relative;
   text-align: center;
@@ -45,10 +69,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 10px;
-  background-color: #1e2939;
-  box-shadow: 0 0 10px rgba(0, 183, 255, 0.479);
-
-  
+  background-color: #32435e;
+  border-radius: 10px;
 }
 
 /* @property --angular{

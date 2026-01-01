@@ -11,7 +11,7 @@ const EmblaCarousel = () => {
   
         <div className="embla" ref={emblaRef}>
           
-          <div className="embla__container ">
+          <div className="embla__container *:*:w-70 *:*:sm:w-60 *:*:md:w-80 *:*:lg:w-96 ">
 
 
             {cont.alugel.map((imovel) => (
@@ -27,18 +27,7 @@ const EmblaCarousel = () => {
             </div>
             ))}
 
-            {cont.arrendar.map((imovel) => (
-                <div className="embla__slide" key={imovel.id}>
-                <CardsImoveis
-                    titulo={imovel.titulo}
-                    preco={imovel.preco}
-                    local={imovel.local}
-                    image={imovel.image}
-                    estado={imovel.estado}
-                    
-                />
-            </div>
-            ))}
+            
             
 
           </div>

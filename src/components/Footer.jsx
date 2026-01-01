@@ -27,12 +27,12 @@ function Footer(){
                 </div>
                 <div className="informacaof">
                     <h2>Comentário</h2>
-                    <div className=" text-black [&_input]:bg-white flex flex-col gap-2.5 *:outline-none *:p-1 "> 
+                    <div className=" text-black  flex flex-col gap-2.5 *:outline-none *:p-1 "> 
                         <input type="email" name="email" id="i_email" placeholder="Email"
-                        className="rounded-lg border-b"/>
+                        className="bg-white "/>
                         
                         <textarea name="comente" id="icomente" placeholder=" Deixe o seu comentário..."  className="bg-white sm:w-50 overflow-hidden h-10 resize-none" ></textarea>
-                        <button className="w-20 bg-yellow-400 rounded-lg text-white">
+                        <button className="w-20 bg-yellow-400 hover:bg-yellow-300 rounded-lg text-gray-500">
                             Comentar
                         </button>
                     </div>
