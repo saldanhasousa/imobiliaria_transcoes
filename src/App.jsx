@@ -15,7 +15,7 @@ import bg_img from './assets/image/img_header/texto_transparent.png'
 import 'swiper/css';
 import EmblaCarousel from './components/EmblaCarousel.jsx'
 import Imoveis from './components/Imoveis.jsx'
-import DetalheImovel from '../page/DetalheImovel.jsx'
+import DetalheImovel from './components/detalhes/DetalheImovel.jsx'
 
 
 function App() {

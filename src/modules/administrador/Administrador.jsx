@@ -5,24 +5,60 @@ import ListaUsuario from '../../components/ListaUsuario'
 import ListaImoveis from '../../components/ListaImovel'
 const Administrador = () => {
   return (
-    <div className='p-2.5 w-full h-full '>
-        <h1 className='py-2.5 font-bold text-[2em]'>Administrador</h1>
+    <main className="min-h-screen bg-slate-50 p-4">
+      
+      {/* HEADER */}
+      <header className="mb-6">
+        <h1 className="text-2xl font-bold text-slate-800">
+          Painel do Administrador
+        </h1>
+        <p className="text-slate-500 text-sm">
+          Gerencie usuários, imóveis e publicações
+        </p>
+      </header>
 
-        <div className=' [&_button]:rounded-sm [&_button]:p-2 flex *:text-nowrap [&_button]:mx-2.5  text-white [&_button]:font-bold max-sm:flex-wrap gap-2.5'>
+      {/* NAVEGAÇÃO */}
+      <nav className="bg-white rounded-xl shadow p-4 flex flex-wrap gap-3 mb-6">
+        <Link
+          to="listUsuario"
+          className="px-4 py-2 bg-slate-700 text-white rounded-lg hover:bg-slate-600 transition"
+        >
+          Usuários
+        </Link>
 
-            <Link to="listUsuario"><button className='bg-gray-600'>Lista Usuário</button></Link>
-            <Link to="listImoveis"><button className='bg-gray-600'>Lista Imoveis</button></Link>
-            <button className='bg-gray-600'>Editar publicação</button>
-            <button className='bg-green-400'>Aceitar</button>
-            <button className='bg-yellow-400'>Validar</button>
-            <button className='bg-red-400'>Publicar</button>
-        </div>
+        <Link
+          to="listImoveis"
+          className="px-4 py-2 bg-slate-700 text-white rounded-lg hover:bg-slate-600 transition"
+        >
+          Imóveis
+        </Link>
 
-        <div className=' mt-2.5'>
-            <Outlet/>
-        </div>
+        <button className="px-4 py-2 bg-slate-600 text-white rounded-lg">
+          Editar publicação
+        </button>
+      </nav>
 
-    </div>
+      {/* AÇÕES CRÍTICAS */}
+      <section className="bg-white rounded-xl shadow p-4 flex flex-wrap gap-3 mb-6">
+        <button className="px-4 py-2 bg-green-500 text-white rounded-lg">
+          Aceitar
+        </button>
+
+        <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg">
+          Validar
+        </button>
+
+        <button className="px-4 py-2 bg-red-500 text-white rounded-lg">
+          Publicar
+        </button>
+      </section>
+
+      {/* CONTEÚDO */}
+      <section className="bg-white rounded-xl shadow p-4">
+        <Outlet />
+      </section>
+
+    </main>
   )
 }
 

@@ -4,6 +4,9 @@ import Autoplay from 'embla-carousel-autoplay'
 import CardsImoveis from './cards/CardsImoveis.jsx'
 import cont from '../data/imoveis.json'
 
+
+
+
 const EmblaCarousel = () => {
 
     const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
@@ -17,6 +20,7 @@ const EmblaCarousel = () => {
             {cont.alugel.map((imovel) => (
                 <div className="embla__slide" key={imovel.id}>
                 <CardsImoveis
+                    id={imovel.id}
                     titulo={imovel.titulo}
                     preco={imovel.preco}
                     local={imovel.local}

@@ -50,7 +50,7 @@ const MobMenu = ({ aberto, onClose }) => {
                 <nav >
                  <ul className="*:font-bold *:p-1.5 flex flex-col gap-2.5 *:hover:bg-gray-800 *:hover:text-white">
                     <li>
-                        <NavLink to="" nClick={onClose}>
+                        <NavLink to="" onClick={onClose}>
 
                             Home
 
@@ -58,15 +58,15 @@ const MobMenu = ({ aberto, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/imoveis" nClick={onClose}>Imóveis</NavLink>
+                        <NavLink to="/imoveis" onClick={onClose}>Imóveis</NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/aprenda" nClick={onClose}>Aprenda</NavLink>
+                        <NavLink to="/aprenda" onClick={onClose}>Aprenda</NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/sobre" nClick={onClose}>Sobre</NavLink>
+                        <NavLink to="/sobre" onClick={onClose}>Sobre</NavLink>
                     </li>
 
                     <li>

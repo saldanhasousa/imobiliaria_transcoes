@@ -41,7 +41,7 @@ export default function ListaUsuario() {
   return (
     <div>
       <h2 className="font-bold text-[1.5em]">Lista de Usuários</h2>
-              <table className=" border-separate  w-[740px] border-spacing-y-2.5  ">
+              <table className=" border-separate  w-185 border-spacing-y-2.5  ">
                   <thead>
                     <tr>
                       <th>ID</th>

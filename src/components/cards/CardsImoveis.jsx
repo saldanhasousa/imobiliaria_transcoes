@@ -47,7 +47,8 @@ const CardsImoveis = ({titulo, preco, local, image, estado, id}) => {
               </p>
 
           </div>
-          <button className=' w-full bg-gray-700 rounded-lg py-1 text-gray-200 text-center'><Link className='cursor-pointer ' to={`/detalheImove/${id}`}>Detalhes</Link></button>
+
+          <Link  className='block w-full  bg-gray-700 rounded-lg py-1 text-gray-200 text-center cursor-pointer ' to={`/detalheImove/${id}`}>Detalhes</Link>
 
         </div>
     

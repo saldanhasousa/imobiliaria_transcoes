@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import './index.css'
 import AOS from 'aos';
@@ -14,14 +14,14 @@ import Sobre from './components/Sobre.jsx';
 import Contactos from './components/Contactos.jsx';
 import ListaUsuario from './components/ListaUsuario.jsx';
 import Administrador from './modules/administrador/Administrador.jsx';
-import DetalheImovel from '../page/DetalheImovel.jsx';
+import DetalheImovel from './components/detalhes/DetalheImovel.jsx';
 import ImovelCadastro from '../page/ImovelCadastro.jsx';
 import ListaImoveis from './components/ListaImovel.jsx';
 
 
 AOS.init();
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {path: "/", element: <App/>,
     children:[
       {path: "/", element: <Home />},
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-      <RouterProvider router={router} basename="/imobiliaria_transcoes" />
+      <RouterProvider router={router} />
 
   </StrictMode>
 )
